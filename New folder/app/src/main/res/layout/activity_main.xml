@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brian.gameconnect3.MainActivity">
+
+    <GridLayout
+        android:id="@+id/board"
+        android:layout_width="284dp"
+        android:layout_height="301dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/kiwiTL"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="0"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiTM"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="1"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiTR"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="2"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiML"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="3"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiMM"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="4"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiMR"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="5"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiLL"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="6"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiLM"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="7"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <ImageView
+            android:id="@+id/kiwiLR"
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:onClick="dropIn"
+            android:rowCount="3"
+            android:tag="8"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="122dp" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/playAgainLayout"
+        android:layout_width="356dp"
+        android:layout_height="246dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="180dp">
+
+        <TextView
+            android:id="@+id/winnerMessage"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.20"
+            android:scrollHorizontally="false"
+            android:textAllCaps="true"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:onClick="playAgain"
+            android:text="Reset" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
