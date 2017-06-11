@@ -31,7 +31,6 @@
         android:id="@+id/LatitudetextView"
         android:layout_width="156dp"
         android:layout_height="24dp"
-        android:text="Latitude: 12.23"
         android:textColor="?attr/actionMenuTextColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,7 +45,6 @@
         android:id="@+id/LongtitudeView"
         android:layout_width="153dp"
         android:layout_height="26dp"
-        android:text="Longtitude: 12.23"
         android:textColor="?attr/actionMenuTextColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +59,6 @@
         android:id="@+id/acctextView"
         android:layout_width="126dp"
         android:layout_height="26dp"
-        android:text="Accuracy: 12.23"
         android:textColor="?attr/actionMenuTextColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +72,6 @@
         android:id="@+id/AltitudetextView"
         android:layout_width="126dp"
         android:layout_height="26dp"
-        android:text="Altitude: 12.23"
         android:textColor="?attr/actionMenuTextColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,16 +83,15 @@
 
     <TextView
         android:id="@+id/addresstextView"
-        android:layout_width="152dp"
-        android:layout_height="101dp"
-        android:text="Address:"
+        android:layout_width="167dp"
+        android:layout_height="134dp"
         android:textColor="?attr/actionMenuTextColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="0.87" />
 
 </android.support.constraint.ConstraintLayout>
